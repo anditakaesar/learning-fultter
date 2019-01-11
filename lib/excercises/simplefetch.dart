@@ -126,15 +126,15 @@ class MyAppFetchExercise2 extends StatelessWidget {
   MyAppFetchExercise2({Key key, this.allchecklist}) : super(key: key);
 
   Widget _buildRow(CheckList aList) {
-//    return ListTile(
-//      title: Text("${aList.description} ${aList.id}"),
-//    );
-
     return ListTile(
+      key: Key(aList.id),
       onTap: () {
-        print('clicked');
+        print('clicked with id: ' + aList.id);
       },
-      title: Text("${aList.description} ${aList.id}"),
+      title: Text("${aList.description}"),
+      trailing: Icon(
+        Icons.star, color: Colors.yellow[500],
+      ),
     );
   }
 

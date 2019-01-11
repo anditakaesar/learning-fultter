@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'examples/simplefetch.dart' as SimpleFetch;
-import 'excercises//simplefetch.dart' as SimpleFetchEx;
+import 'excercises/simplefetch.dart' as SimpleFetchEx;
+import 'examples/layoutui.dart' as LayoutUI;
 
 void main() {
   //runApp(MyApp(post: fetchPost()));
   //runApp(SimpleFetch.MyAppFetchExample(post: SimpleFetch.fetchPost()));
   //runApp(SimpleFetchEx.MyAppFetchExercise(mychecklist: SimpleFetchEx.loadCheckList()));
-  runApp(SimpleFetchEx.MyAppFetchExercise2(allchecklist: SimpleFetchEx.loadAllCheckList(),));
+  //runApp(SimpleFetchEx.MyAppFetchExercise2(allchecklist: SimpleFetchEx.loadAllCheckList(),));
+  runApp(LayoutUI.MyAppLayoutUI());
 }
 
 class MyApp extends StatelessWidget {
